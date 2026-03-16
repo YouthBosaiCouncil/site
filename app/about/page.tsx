@@ -2,7 +2,7 @@ import { CheckCircle2, Target, Heart } from "lucide-react";
 
 export const metadata = {
   title: "団体概要 | 若者防災協議会",
-  description: "若者防災協議会の設立背景、ビジョン、およびコアメンバーのご紹介です。",
+  description: "若者防災協議会の設立背景、ビジョン、および概要のご紹介です。",
 };
 
 export default function AboutPage() {
@@ -28,18 +28,20 @@ export default function AboutPage() {
                 Our Vision
               </div>
               <h3 className="text-3xl md:text-4xl font-extrabold text-zinc-900 dark:text-white mb-8 leading-tight tracking-tight">
-                「誰一人<span className="text-gradient">取り残さない</span>」<br />新しい防災のスタンダードを。
+                「防災が<span className="text-gradient">日常</span>の<br />世界にする」
               </h3>
               <p className="text-zinc-500 dark:text-zinc-400 leading-relaxed mb-6 text-lg">
-                近年激甚化する自然災害。その中で、若者は単なる「守られるべき対象」ではありません。身体的にも情報収集能力にも長けた若者こそが、地域防災の新たな担い手になれると私たちは信じています。
+                私たちは、防災が特別なことではなく、毎日の生活の一部として当たり前になる社会を目指しています。災害のニュースを見た時だけでなく、日常の中で自然と防災に触れる機会を創出します。
               </p>
               <p className="text-zinc-500 dark:text-zinc-400 leading-relaxed text-lg">
-                若者防災協議会は、デジタル技術と若者ならではの柔軟な発想を組み合わせ、従来の枠にとらわれない新しい防災・減災の在り方を提案し、社会全体の実践力向上を目指します。
+                神戸学院大学の学生・卒業生を中心に活動を開始し、現在ではオンラインを通じて全国からメンバーが参加。オンライン活動と対面イベントを融合させた「ハイブリッド型活動」を展開しています。
               </p>
             </div>
             <div className="relative">
-              <div className="aspect-square md:aspect-[4/5] bg-zinc-100 dark:bg-zinc-900 rounded-[2rem] overflow-hidden relative border border-zinc-200 dark:border-zinc-800">
+              <div className="aspect-square md:aspect-[4/5] bg-zinc-100 dark:bg-zinc-900 rounded-[2rem] overflow-hidden relative border border-zinc-200 dark:border-zinc-800 flex items-center justify-center">
                 <div className="absolute inset-0 bg-gradient-to-tr from-blue-500/20 to-violet-500/20 mix-blend-multiply dark:mix-blend-screen"></div>
+                {/* プレースホルダーとしてアイコンを大きく表示（実際の画像があれば置き換え可能） */}
+                <Heart className="w-32 h-32 text-zinc-300 dark:text-zinc-700/50" />
               </div>
               
               <div className="absolute -bottom-8 -left-8 bg-white dark:bg-zinc-900 p-8 rounded-3xl shadow-xl dark:border dark:border-zinc-800 hidden md:block">
@@ -49,7 +51,7 @@ export default function AboutPage() {
                   </div>
                   <div>
                     <div className="text-sm font-bold text-zinc-400 dark:text-zinc-500 uppercase tracking-wider mb-1">設立</div>
-                    <div className="text-2xl font-extrabold text-zinc-900 dark:text-white">2023年 4月</div>
+                    <div className="text-2xl font-extrabold text-zinc-900 dark:text-white">2021年 5月</div>
                   </div>
                 </div>
               </div>
@@ -58,32 +60,32 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Core Values */}
+      {/* Core Values / Features */}
       <section className="py-24 bg-zinc-50 dark:bg-zinc-950/50 border-y border-zinc-200 dark:border-zinc-900">
         <div className="container px-6">
           <div className="text-center mb-16">
-            <h2 className="text-3xl font-extrabold text-zinc-900 dark:text-white mb-4 tracking-tight">私たちが大切にしていること</h2>
-            <p className="text-zinc-500 dark:text-zinc-400 max-w-2xl mx-auto text-lg">活動の根底にある3つのコアバリュー</p>
+            <h2 className="text-3xl font-extrabold text-zinc-900 dark:text-white mb-4 tracking-tight">活動の特長・受賞歴</h2>
+            <p className="text-zinc-500 dark:text-zinc-400 max-w-2xl mx-auto text-lg">私たちの取り組みは各所で評価されています</p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="card-premium">
               <div className="w-12 h-12 bg-blue-50 dark:bg-blue-900/20 text-blue-600 dark:text-blue-400 rounded-2xl flex items-center justify-center mb-6">
-                <Heart size={24} />
+                <CheckCircle2 size={24} />
               </div>
-              <h3 className="text-xl font-bold mb-3 text-zinc-900 dark:text-white">共感と寄り添い</h3>
+              <h3 className="text-xl font-bold mb-3 text-zinc-900 dark:text-white">オンラインの基盤</h3>
               <p className="text-zinc-500 dark:text-zinc-400 leading-relaxed font-medium">
-                被災者の声に耳を傾け、上段からではなく一緒に考える姿勢を持ち続けます。
+                「Zoomで防災教育」など、全国どこからでも参加できるオンライン環境を活用。コロナ禍でも歩みを止めずに活動を拡大しました。
               </p>
             </div>
             
             <div className="card-premium">
               <div className="w-12 h-12 bg-violet-50 dark:bg-violet-900/20 text-violet-600 dark:text-violet-400 rounded-2xl flex items-center justify-center mb-6">
-                <CheckCircle2 size={24} />
+                <Heart size={24} />
               </div>
-              <h3 className="text-xl font-bold mb-3 text-zinc-900 dark:text-white">実践志向</h3>
+              <h3 className="text-xl font-bold mb-3 text-zinc-900 dark:text-white">教材「VERGE」の開発</h3>
               <p className="text-zinc-500 dark:text-zinc-400 leading-relaxed font-medium">
-                机上の空論ではなく、「いざという時に本当に動けるか」を常に問い続けます。
+                子どもから大人まで体験できる、被災者の視点での選択型防災ゲーム「VERGE」を制作し、各地のイベントで提供しています。
               </p>
             </div>
 
@@ -91,9 +93,9 @@ export default function AboutPage() {
               <div className="w-12 h-12 bg-cyan-50 dark:bg-cyan-900/20 text-cyan-600 dark:text-cyan-400 rounded-2xl flex items-center justify-center mb-6">
                 <Target size={24} />
               </div>
-              <h3 className="text-xl font-bold mb-3 text-zinc-900 dark:text-white">常にアップデート</h3>
+              <h3 className="text-xl font-bold mb-3 text-zinc-900 dark:text-white">ぼうさい甲子園 受賞</h3>
               <p className="text-zinc-500 dark:text-zinc-400 leading-relaxed font-medium">
-                テクノロジーの進化や環境の変化に合わせて、防災の手法もアップデートし続けます。
+                18回（2022年度）1.17防災未来賞「ぼうさい甲子園」において、継続的かつ柔軟な活動が評価され「しなやかwithコロナ賞」を受賞しました。
               </p>
             </div>
           </div>
@@ -112,28 +114,24 @@ export default function AboutPage() {
               <tbody>
                 <tr className="border-b border-zinc-200 dark:border-zinc-800">
                   <th className="py-6 px-8 font-bold w-1/3 text-zinc-900 dark:text-zinc-100 bg-zinc-50 dark:bg-zinc-900/80">団体名</th>
-                  <td className="py-6 px-8 text-zinc-600 dark:text-zinc-400 font-medium">学生団体 若者防災協議会<br/><span className="text-sm font-normal text-zinc-400">(Youth Disaster Prevention Council)</span></td>
+                  <td className="py-6 px-8 text-zinc-600 dark:text-zinc-400 font-medium">若者防災協議会</td>
                 </tr>
                 <tr className="border-b border-zinc-200 dark:border-zinc-800">
                   <th className="py-6 px-8 font-bold w-1/3 text-zinc-900 dark:text-zinc-100 bg-zinc-50 dark:bg-zinc-900/80">設立</th>
-                  <td className="py-6 px-8 text-zinc-600 dark:text-zinc-400 font-medium">2023年4月1日</td>
+                  <td className="py-6 px-8 text-zinc-600 dark:text-zinc-400 font-medium">2021年5月</td>
                 </tr>
                 <tr className="border-b border-zinc-200 dark:border-zinc-800">
-                  <th className="py-6 px-8 font-bold w-1/3 text-zinc-900 dark:text-zinc-100 bg-zinc-50 dark:bg-zinc-900/80">代表</th>
-                  <td className="py-6 px-8 text-zinc-600 dark:text-zinc-400 font-medium">防災 太郎（〇〇大学 〇〇学部 3年）</td>
-                </tr>
-                <tr className="border-b border-zinc-200 dark:border-zinc-800">
-                  <th className="py-6 px-8 font-bold w-1/3 text-zinc-900 dark:text-zinc-100 bg-zinc-50 dark:bg-zinc-900/80">メンバー数</th>
-                  <td className="py-6 px-8 text-zinc-600 dark:text-zinc-400 font-medium">約30名（関東圏の大学生を中心とする）</td>
+                  <th className="py-6 px-8 font-bold w-1/3 text-zinc-900 dark:text-zinc-100 bg-zinc-50 dark:bg-zinc-900/80">主なメンバー層</th>
+                  <td className="py-6 px-8 text-zinc-600 dark:text-zinc-400 font-medium">神戸学院大学の学生・卒業生を中心に、全国の若者がオンラインベースで参画</td>
                 </tr>
                 <tr>
                   <th className="py-6 px-8 font-bold w-1/3 text-zinc-900 dark:text-zinc-100 bg-zinc-50 dark:bg-zinc-900/80 align-top">主な活動内容</th>
                   <td className="py-6 px-8 text-zinc-600 dark:text-zinc-400">
                     <ul className="list-disc list-inside space-y-3 font-medium">
-                      <li>若者向け防災教育プログラムの開発・実施</li>
-                      <li>地域防災イベントへの企画・運営サポート</li>
-                      <li>防災グッズの共同開発検証</li>
-                      <li>SNSを通じた日常的な防災啓発ワーキング</li>
+                      <li>Zoomなどのオンラインを活用した防災教育イベントの開催</li>
+                      <li>選択型防災ゲーム「VERGE」の開発・アップデート</li>
+                      <li>小学生向けなど対面の防災イベント（防災ストラックアウト等）の実施</li>
+                      <li>オンラインと対面を組み合わせたハイブリッド型活動</li>
                     </ul>
                   </td>
                 </tr>
